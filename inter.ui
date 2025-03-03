@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Денежные переводы</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lbl_receiver">
+     <property name="text">
+      <string>Выберите получателя:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="cmb_receiver"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbl_country">
+     <property name="text">
+      <string>Выберите страну перевода:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="cmb_country"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbl_commission">
+     <property name="text">
+      <string>Комиссия: Не выбрана</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbl_amount">
+     <property name="text">
+      <string>Сумма перевода:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txt_amount"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_transfer">
+     <property name="text">
+      <string>Совершить перевод</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lbl_history">
+     <property name="text">
+      <string>История переводов:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="txt_history">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
